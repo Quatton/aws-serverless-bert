@@ -3,7 +3,7 @@ from transformers import AutoModelForQuestionAnswering, AutoTokenizer
 def get_model(model):
   """Loads model from Hugginface model hub"""
   try:
-    model = AutoModelForQuestionAnswering.from_pretrained(model,use_cdn=True)
+    model = AutoModelForQuestionAnswering.from_pretrained(model)
     model.save_pretrained('./model')
   except Exception as e:
     raise(e)
