@@ -9,3 +9,6 @@ get_model.py
 
 # Virtualenv
 .env
+
+# VSCode
+.vscode
